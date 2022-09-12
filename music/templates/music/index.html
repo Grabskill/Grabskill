@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<ul>
+    {% for album in all_albums %}
+    <li>
+        <a href="/music/{{ album.id }}">{{ album.album_name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+</html>

@@ -1,0 +1,15 @@
+{% extends 'pracice/base.html' %}
+
+{% block body %}
+
+<h2>Books List</h2><br>
+<ul>
+    {% for book in object_list %}
+    <li>
+        <a href="{% url 'pracice:detail' book.id %}">{{ book.book_title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}
